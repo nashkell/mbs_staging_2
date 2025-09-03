@@ -4,6 +4,7 @@
 
 /* font */
 @font-face {
+    /* font-family: 'cerebri-sans-regular'; */
     font-family: 'cerebri-sans-regular';
     src: url('fonts/CerebriSans-Regular.woff2') format('woff2'),
         url('fonts/CerebriSans-Regular.woff') format('woff');
@@ -44,8 +45,10 @@
 }
 /* variable */
 :root {      
-    --alt-font: 'cerebri-sans-regular';
-    --primary-font:  'cerebri-sans-regular';
+    /* --alt-font: 'cerebri-sans-regular';
+    --primary-font:  'cerebri-sans-regular'; */
+    --alt-font: 'Fira Sans';
+    --primary-font:  'Fira Sans';
     --base-color: #005153;
     --dark-gray:#1e3238;
     --very-light-gray:#eceff1;
@@ -58,27 +61,30 @@ body {
     font-size: 18px;
     line-height: 30px;
 }
+p {
+  font-family: 'PT Serif' !important;
+}
 /* font weight */
-.fw-400 {
-    font-family: 'cerebri-sans-regular' !important; 
+/* .fw-400 {
+    font-family: 'Fira Sans regular' !important; 
     font-weight: normal !important;
 }
 .fw-300 {
-    font-family: 'cerebri-sans-light' !important;
+    font-family: 'Fira Sans light' !important;
     font-weight: normal !important;
 }
 .fw-500 {
-    font-family: 'cerebri-sans-medium' !important;
+    font-family: 'Fira Sans medium' !important;
     font-weight: normal !important;
 }
 .fw-600 {
-    font-family: 'cerebri-sans-semibold' !important;
+    font-family: 'Fira Sans semibold' !important;
     font-weight: normal !important;
-}
-.fw-700 {
-    font-family: 'cerebri-sans-bold' !important;
+} */
+/* .fw-700 {
+    font-family: 'Fira Sans bold' !important;
     font-weight: normal !important;
-} 
+}  */
 /* custom cursor */
 .custom-cursor .circle-cursor-inner {
     background-color: var(--yellow);
@@ -114,12 +120,12 @@ h6 {
 /* header */
 .navbar .navbar-nav .nav-link {
     font-size: 18px;
-    font-family: 'cerebri-sans-medium' !important;
+    font-family: 'Fira Sans medium' !important;
 }
 .navbar .navbar-nav .dropdown .dropdown-menu a {
     font-size: 16px;
     line-height: 28px;
-    font-family: 'cerebri-sans-regular' !important; 
+    font-family: 'Fira Sans regular' !important; 
 }
 header .btn.btn-small {
     font-size: 14px
@@ -138,7 +144,7 @@ header .navbar-brand img {
     padding: 20px 30px;
     font-size: 17px;
     color: var(--dark-gray) !important; 
-    font-family: 'cerebri-sans-medium' !important;
+    font-family: 'Fira Sans medium' !important;
 }
 .navbar .navbar-nav .dropdown.dropdown-with-icon-style02 .dropdown-menu li a:hover{
     background-color: var(--very-light-gray);
@@ -155,7 +161,7 @@ header .navbar-brand img {
     margin-left: 6px;
 }
 .btn {
-    font-family: 'cerebri-sans-medium'; 
+    font-family: 'Fira Sans medium'; 
     font-weight: normal !important;
     text-transform: none;
     letter-spacing: normal;
