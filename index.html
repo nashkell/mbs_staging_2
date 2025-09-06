@@ -37,7 +37,7 @@
                 <div class="container-fluid">
                     <div class="row h-45px xs-h-auto align-items-center m-0 xs-pt-5px xs-pb-5px">
                         <div class="col-lg-6 col-md-7 text-center text-md-start xs-px-0">
-                            <div class="fs-15 text-dark-gray fw-500">Stop wasting hours on bookkeeping when you could be growing your business. <a href="demo-accounting-contact.html" class="text-dark-gray text-decoration-line-bottom fw-600">Connect now</a></div>
+                            <div class="fs-15 text-dark-gray fw-500">Stop wasting hours on bookkeeping when you could be growing your business. <a href="mailto:info@moveenbusiness.com" class="text-dark-gray text-decoration-line-bottom fw-600">Connect now</a></div>
                         </div>
                         <div class="col-lg-6 col-md-5 text-end d-none d-md-flex">
                             <div class="widget fs-15 fw-500 me-35px lg-me-25px md-me-0 text-dark-gray"><a href="tel:02228899900"><i class="feather icon-feather-phone-call"></i>+1 234 567 8910</a></div>
@@ -139,7 +139,7 @@
                             <div class="col-xl-7 col-lg-6 col-sm-7 ps-45px lg-ps-15px last-paragraph-no-margin text-center text-sm-start" data-anime='{  "opacity": [0,1], "delay": 100, "staggervalue": 250, "easing": "easeOutQuad" }'>
                                 <h5 class="fw-600 text-dark-gray ls-minus-1px mb-15px">Years working experience.</h5>
                                 <p>Serving businesses across multiple industries, we put a strong focus on the needs of business to figure out solutions that best fits your demand.</p>
-                                <a href="demo-accounting-process.html" class="btn btn-link btn-hover-animation-switch btn-extra-large text-base-color text-transform-none fw-600 mt-15px">
+                                <a href="#valueProp" class="btn btn-link btn-hover-animation-switch btn-extra-large text-base-color text-transform-none fw-600 mt-15px">
                                     <span>
                                         <span class="btn-text">Discover now</span>
                                         <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
@@ -156,30 +156,13 @@
                         <div class="ps-14 pe-14 pt-12 pb-12 lg-p-12 bg-white box-shadow-quadruple-large border-radius-6px">
                             <h6 class="d-inline-block fw-600 text-dark-gray ls-minus-1px mb-35px sm-mb-25px" data-anime='{ "translateY": [15, 0], "translateX": [-15, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>Bookkeeping Made Simple</h6>
                             <!-- start contact form -->
-                            <form action="email-templates/contact-form.php" method="post" data-anime='{ "el": "childs", "translateY": [15, 0], "translateX": [-15, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                                <div class="position-relative form-group mb-15px">
-                                    <span class="form-icon"><i class="bi bi-emoji-smile"></i></span>
-                                    <input type="text" name="name" class="form-control required" placeholder="Your name*" />
-                                </div>
-                                <div class="position-relative form-group mb-15px">
-                                    <span class="form-icon"><i class="bi bi-envelope"></i></span>
-                                    <input type="email" name="email" class="form-control required" placeholder="Your email address*" />
-                                </div>
-                                <div class="position-relative form-group mb-20px">
-                                    <span class="form-icon"><i class="bi bi-telephone-outbound"></i></span>
-                                    <input type="tel" name="phone" class="form-control" placeholder="Your phone" />
-                                </div>
-                                <div class="position-relative terms-condition-box text-start d-inline-block">
-                                    <label>
-                                        <input type="checkbox" name="terms_condition" id="terms_condition" value="1" class="terms-condition check-box align-middle required">
-                                        <span class="box fs-16">I agree to the <a href="#">terms of service</a>.</span>
-                                    </label>
-                                </div>
-                                <div class="position-relative mt-20px">
-                                    <button class="btn btn-large btn-round-edge btn-base-color btn-box-shadow submit w-100" type="submit">Simplify my books</button>
-                                    <div class="form-results mt-20px text-center lh-24 d-none"></div>
-                                </div>
+                            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSf3onU-4TPcf-c9Aws9Pm0hW5GHKNj9ymwcG4Kn_kAouOihtQ/formResponse?" data-anime='{ "el": "childs", "translateY": [15, 0], "translateX": [-15, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }' target="hidden_iframe" onsubmit="submitted=true;">
+                                <input class="position-relative form-group mb-15px form-control required" type="text" name="entry.214687543" id="entry.214687543" placeholder="Your name*" />
+                                <input class="position-relative form-group mb-15px form-control required" type="email" name="entry.869556061" id="entry.869556061" placeholder="Your email address*" />
+                                <input class="position-relative form-group mb-20px form-control required" type="tel" name="entry.1313723748" id="entry.1313723748" placeholder="Your phone" />
+                                <input type="submit" value="Simplify my books" class="btn btn-large btn-round-edge btn-base-color btn-box-shadow w-100 mt-20px">
                             </form>
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                             <!-- end contact form -->
                         </div> 
                     </div>
@@ -254,7 +237,7 @@
         </section>
         <!-- end section -->
         <!-- start section --> 
-        <section class="bg-very-light-gray overflow-hidden">
+        <section class="bg-very-light-gray overflow-hidden" id="valueProp">
             <div class="container">
                 <div class="row align-items-center justify-content-center mb-6 text-center text-lg-start">
                     <div class="col-xl-5 col-lg-5 md-mb-20px" data-anime='{ "translateX": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
@@ -597,7 +580,7 @@
                         <!-- end footer column -->
                         <!-- start footer column -->
                         <div class="col-xl-6 text-center text-xl-end">
-                            <a href="demo-accounting-contact.html" class="btn btn-extra-large btn-yellow left-icon btn-box-shadow btn-rounded text-transform-none d-inline-block align-middle me-15px xs-m-10px"><i class="feather icon-feather-mail"></i>Schedule a consultation</a>
+                            <a href="mailto:info@moveenbusiness.com"" class="btn btn-extra-large btn-yellow left-icon btn-box-shadow btn-rounded text-transform-none d-inline-block align-middle me-15px xs-m-10px"><i class="feather icon-feather-mail"></i>Schedule a consultation</a>
                             <!-- <a href="tel:12345678910" class="btn btn-extra-large btn-base-color left-icon btn-box-shadow btn-rounded d-inline-block align-middle xs-m-10px"><i class="feather icon-feather-phone-call"></i>+1 234 567 8910</a> -->
                         </div>
                         <!-- end footer column -->
@@ -607,21 +590,21 @@
             <div class="container">
                 <div class="row justify-content-center fs-17 fw-300 mt-5 mb-4 md-mt-45px md-mb-45px xs-mt-35px xs-mb-35px">
                     <!-- start footer column -->
-                    <div class="col-6 col-lg-3 order-sm-1 md-mb-40px xs-mb-30px last-paragraph-no-margin">
+                    <div class="col-6 col-lg-6 order-sm-1 md-mb-40px xs-mb-30px last-paragraph-no-margin">
                         <a href="demo-accounting.html" class="footer-logo mb-15px d-inline-block"><img src="images/demo-accounting-logo-white.png" data-at2x="images/demo-accounting-logo-white@2x.png" alt=""></a>
                         <p class="w-85 xl-w-95 sm-w-100">Numbers in Order.</br>Business in Control.</p>
-                        <div class="elements-social social-icon-style-02 mt-20px lg-mt-20px">
+                        <!-- <div class="elements-social social-icon-style-02 mt-20px lg-mt-20px">
                             <ul class="small-icon light">
                                 <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
                                 <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i class="fa-brands fa-dribbble"></i></a></li> 
                                 <li><a class="twitter" href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li> 
                                 <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> 
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- end footer column -->
                     <!-- start footer column -->
-                    <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-3 order-lg-2">
+                    <!-- <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-3 order-lg-2">
                         <span class="fs-18 fw-400 d-block text-white mb-5px">About</span>
                         <ul>
                             <li><a href="demo-accounting-company.html">Company</a></li>
@@ -629,40 +612,35 @@
                             <li><a href="demo-accounting-process.html">Process</a></li>
                             <li><a href="demo-accounting-contact.html">Contact</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                     <!-- end footer column -->
                     <!-- start footer column -->
-                    <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-4 order-lg-3">
+                    <div class="col-6 col-lg-3 col-sm-4 xs-mb-30px order-sm-4 order-lg-3">
                         
                     </div>
                     <!-- end footer column -->
                     <!-- start footer column -->
-                    <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
+                    <div class="col-6 col-lg-3 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
                         <span class="fs-18 fw-400 d-block text-white mb-5px">Get in touch</span>
                         <p class="mb-5px">Need support?</p>
                         <a href="mailto:info@moveenbusiness.com" class="text-white lh-16 d-block mb-15px">info@moveenbusiness.com</a>
                         <p class="mb-5px">Customer care?</p>
                         <a href="tel:12345678910" class="text-white lh-16 d-block">+1 234 567 8910</a>
                     </div>
-                    <!-- end footer column -->
-                    <!-- start footer column -->
-                    <div class="col-lg-3 col-sm-6 md-mb-40px xs-mb-0 order-sm-2 order-lg-5">
-                        
-                    </div>
-                    <!-- end footer column -->                       
+                    <!-- end footer column -->                      
                 </div> 
                 <div class="row align-items-center fs-16 fw-300">
                     <!-- start copyright -->
                     <div class="col-md-6 last-paragraph-no-margin order-2 order-md-1 text-center text-md-start"><p>&COPY; Moveen Business Solutions | 2025 All Rights Reserved.</p></div>
                     <!-- end copyright -->
                     <!-- start footer menu -->
-                    <div class="col-md-6 text-md-end order-1 order-md-2 text-center text-md-end sm-mb-10px">
+                    <!-- <div class="col-md-6 text-md-end order-1 order-md-2 text-center text-md-end sm-mb-10px">
                         <ul class="footer-navbar sm-lh-normal"> 
                             <li><a href="#" class="nav-link">Privacy policy</a></li>
                             <li><a href="#" class="nav-link">Terms and conditions</a></li>
-                            <!-- <li><a href="#" class="nav-link">Copyright</a></li> -->
+                            <li><a href="#" class="nav-link">Copyright</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                     <!-- end footer menu -->
                 </div>
             </div> 
@@ -683,7 +661,14 @@
         <!-- javascript libraries -->
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/vendors.min.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA56KqSJ11nQUw_tXgXyNMiPmQeM7EaSA&callback=initMap"></script>
+        <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA56KqSJ11nQUw_tXgXyNMiPmQeM7EaSA&callback=initMap"></script> -->
         <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript">var submitted=false;</script>
+        <script type="text/javascript">
+        $('#gform').on('submit', function(e) {
+            $('#gform *').fadeOut(2000);
+            $('#gform').prepend('Thank you, we will reach out to you in the next 24hrs...');
+            });
+        </script>
     </body>
 </html>
